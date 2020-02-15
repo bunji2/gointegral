@@ -6,7 +6,7 @@
 
 ![](https://latex.codecogs.com/gif.latex?\int_{x_i}^{x_{i&plus;1}}f(x)dx\approx\frac{1}{6}(x_{i&plus;1}-x_i)(f(x_i)&plus;4f(\frac{x_i&plus;x_{i&plus;1}}{2})&plus;f(x_{i&plus;1})))
 
-例えば区間 ![](https://latex.codecogs.com/gif.latex?[a,b]) の定積分であれば、区間を N 等分した十分に小さな区間 ![](https://latex.codecogs.com/gif.latex?[x_i,x_{i+1}]) の定積分の合計と考えればよい。
+区間 ![](https://latex.codecogs.com/gif.latex?[a,b]) の定積分であれば、区間を N 等分した十分に小さな区間 ![](https://latex.codecogs.com/gif.latex?[x_i,x_{i+1}]) の定積分の合計と考えればよい。
 
 ![](https://latex.codecogs.com/gif.latex?x_i=a&plus;\frac{b-a}{N}i) where ![](https://latex.codecogs.com/gif.latex?(0\leq{i}<N))
 
@@ -16,7 +16,7 @@
 
 gointegral では積分区間 interval、区間を等分する個数 N、積分対象とする関数 f を JavaScript のコードで与える。
 
-例として、sin 関数の[0,1] 区間での定積分では次のような JavaScript コードを使う。
+例として、sin 関数の[0,2π] 区間での定積分では次のような JavaScript コードを使う。
 
 ```javascript
 // 積分区間 [a, b]
