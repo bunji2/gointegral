@@ -13,18 +13,19 @@ func ExampleSimpson() {
 	a := float64(0)
 	b := float64(1)
 	n := int64(1000)
-	result := simpson(a, b, n, func(x float64) float64 {
+	f := func(x float64) float64 {
 		return float64(2) * x
-	})
+	}
+	result := simpson(a, b, n, f)
 	fmt.Println("result =", result)
 }
 
 func TestSimpson(t *testing.T) {
-	a := float64(0.0)
-	b := float64(1.0)
+	a := float64(0)
+	b := float64(1)
 	n := int64(1000)
 	f := func(x float64) float64 {
-		return float64(2.0) * x
+		return float64(2) * x
 	}
 	got := simpson(a, b, n, f)
 	want := float64(1.0)
