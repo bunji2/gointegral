@@ -16,7 +16,7 @@
 
 gointegral では積分区間 interval、区間を等分する個数 N、積分対象とする関数 f を JavaScript のコードで与える。
 
-例として、sin 関数の[0,2π] 区間での定積分では次のような JavaScript コードを使う。
+例として、sin 関数の[0,π] 区間での定積分では次のような JavaScript コードを使う。
 
 ```javascript
 // sin.js
