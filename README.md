@@ -2,15 +2,49 @@
 
 シンプソン法の golang 実装。
 
-十分小さな区間 ![](https://latex.codecogs.com/gif.latex?[x_i,x_{i+1}]) における関数 ![](https://latex.codecogs.com/gif.latex?f(x)) の定積分は、次の近似式で与えられる。
+十分小さな区間 
+<!--
+![](https://latex.codecogs.com/gif.latex?[x_i,x_{i+1}])
+-->
+![](0.gif)
+  における関数 
+<!--
+![](https://latex.codecogs.com/gif.latex?f(x))
+-->
+![](1.gif)
+ の定積分は、次の近似式で与えられる。
 
+<!--
 ![](https://latex.codecogs.com/gif.latex?\int_{x_i}^{x_{i&plus;1}}f(x)dx\approx\frac{1}{6}(x_{i&plus;1}-x_i)(f(x_i)&plus;4f(\frac{x_i&plus;x_{i&plus;1}}{2})&plus;f(x_{i&plus;1})))
+-->
+![](2.gif)
 
-区間 ![](https://latex.codecogs.com/gif.latex?[a,b]) の定積分であれば、区間を N 等分した十分に小さな区間 ![](https://latex.codecogs.com/gif.latex?[x_i,x_{i+1}]) の定積分の合計と考えればよい。
+区間 
+<!--
+![](https://latex.codecogs.com/gif.latex?[a,b])
+-->
+![](3.gif)
+ の定積分であれば、区間を N 等分した十分に小さな区間 
+<!--
+![](https://latex.codecogs.com/gif.latex?[x_i,x_{i+1}])
+-->
+![](4.gif)
+ の定積分の合計と考えればよい。
 
-![](https://latex.codecogs.com/gif.latex?x_i=a&plus;\frac{b-a}{N}i) where ![](https://latex.codecogs.com/gif.latex?(0\leq{i}<N))
+<!--
+![](https://latex.codecogs.com/gif.latex?x_i=a&plus;\frac{b-a}{N}i)
+-->
+![](5.gif)
+ where 
+<!--
+![](https://latex.codecogs.com/gif.latex?(0\leq{i}<N))
+-->
+![](6.gif)
 
+<!--
 ![](https://latex.codecogs.com/gif.latex?%5Cint_%7Ba%7D%5E%7Bb%7Df%28x%29dx%5Capprox%5Csum_%7Bi%3D0%7D%5E%7BN-1%7D%5Cleft%5C%7B%5Cfrac%7B1%7D%7B6%7D%28x_%7Bi&plus;1%7D-x_i%29%28f%28x_i%29&plus;4f%28%5Cfrac%7Bx_i&plus;x_%7Bi&plus;1%7D%7D%7B2%7D%29&plus;f%28x_%7Bi&plus;1%7D%29%29%5Cright%5C%7D)
+-->
+![](7.gif)
 
 ----
 
@@ -75,7 +109,10 @@ error  = 0.0002467399037531237 [%]
 ----
 いくつか実行例を示す。
 
+<!--
 ![](https://latex.codecogs.com/gif.latex?I%3D%5Cint_%7B0%7D%5E%7B1%7D5x%5E4dx)
+-->
+![](8.gif)
 
 ```javascript
 // 積分区間
@@ -104,7 +141,11 @@ error  = 4.4853010194856324e-12 [%]
 ```
 
 ----
+
+<!--
 ![](https://latex.codecogs.com/gif.latex?I%3D%5Cint_%7B0%7D%5E%7B2%5Cpi%7D%7C%5Ccos%28x%29%7Cdx)
+-->
+![](9.gif)
 
 ```javascript
 // 積分区間
@@ -134,7 +175,10 @@ error  = 0.15707859919034117 [%]
 
 ----
 
+<!--
 ![](https://latex.codecogs.com/gif.latex?I=\int_{\sqrt{2}}^2\left(\frac{1}{x\sqrt{x^2-1}}\right)dx)
+-->
+![](10.gif)
 
 ```javascript
 // 積分区間
